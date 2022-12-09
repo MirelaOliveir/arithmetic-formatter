@@ -1,3 +1,9 @@
 from arithmetic_arranger import arithmetic_arranger
+from unittest import main
 
-print(arithmetic_arranger(['23 - 55', '999 + 9', '22 + 8723'], results=True))
+
+print(arithmetic_arranger(["32 + 698", "3801 - 2", "45 + 43", "123 + 49"]))
+
+
+
+main(module='test_module', exit=False)
