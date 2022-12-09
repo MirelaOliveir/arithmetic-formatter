@@ -60,11 +60,11 @@ def arithmetic_arranger(calculos, results=False):
                 soma = int(n1) - int(n2)
             soma = str(soma)
 
-        # espacing results
-        space_reslt = ''
-        space_needed = len(unders) - len(soma)
-        for i in range(space_needed):
-            space_reslt += ' '
+            # espacing results
+            space_reslt = ''
+            space_needed = len(unders) - len(soma)
+            for i in range(space_needed):
+                space_reslt += ' '
 
         space_needed = len(unders) - len(n1)
         for i in range(space_needed):
