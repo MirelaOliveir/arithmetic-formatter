@@ -17,7 +17,7 @@ def arithmetic_arranger(calculos, results=False):
         for n in calc:
             if n == ' ':
                 n.replace(' ', '')
-            elif n == '\\' or n == '*':
+            elif n == '/' or n == '*':
                 erro_1 = "Error: Operator must be '+' or '-'."
                 return erro_1
             elif not n.isdigit() and not n == '+' and not n == "-":
@@ -88,5 +88,7 @@ def arithmetic_arranger(calculos, results=False):
             else:
                 total_rows += space_reslt + soma
 
-    final = '\n'.join((first_row, second_row, underline, total_rows))
+        final = '\n'.join((first_row, second_row, underline))
+    if results:
+        final = '\n'.join((first_row, second_row, underline, total_rows))
     return final
